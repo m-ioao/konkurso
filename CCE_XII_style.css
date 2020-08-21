@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+/*N-I Bloc complet */
+#frpspc * {box-sizing: border-box;}
+#frpspc {display: grid; grid-template-columns: 1fr 209px; margin:auto; width:697px; min-height: 527px; background-image:url(https://www.transparenttextures.com/patterns/stardust.png), linear-gradient(to bottom left, #440022, #002233,#001122); font-family: 'Open Sans Condensed',sans-serif; border-radius: 0 3px; color:whitesmoke; padding-left: 51px; clip-path: polygon(51px 0, 100% 0%, 100% calc(100% - 17px) , 0% 100%);}
+
+/*N-II FEUILLET GAUCHE*/
+#frpspc section {display: flex;flex-flow: column;align-items: flex-end;justify-content: space-evenly; padding: 17px 0 17px 17px;} 
+
+/*N·S-III Titre principal */
+#frpspc h3 {display: inline-flex;text-shadow: 0 0 11px black; font-weight: bold; font-size: 1.53em; clip-path: polygon(11px 11px, 100% 0%, 100% calc(100% - 11px), 0% 100%);}
+#frpspc h3 span {transform: rotate(-1.7deg);}
+
+/* Citation inf */
+#frpspc h3 span i {font-size:.68em;opacity:.85; }
+
+/* N·S-III Corps de Texte du RP */
+#frpspc p {width: 100%;min-height:306px; padding:34px 11px 34px 34px; text-align:justify; clip-path: polygon(0 0, 100% 17px, 100% 100%, 17px calc(100% - 17px));font-size: 0.96em;line-height: 1.1em;}
+
+
+/* Dialogue */ 
+#frpspc p q {display:inline-block;quotes: "« " " »" "‹ " " ›";font-style: italic;font-size: 0.96em;font-weight: bold;padding-left: 17px;float: right;margin: 11px; }
+
+/* Incise du dialogue */
+#frpspc p q > span {font-style: normal;font-weight: normal;color: white;}
+
+/*N·S-III Tag et/ou note de fin */ 
+#frpspc section > div{display:inline-flex; height:max-content; clip-path: polygon(11px 11px, 100% 0%, 100% calc(100% - 11px), 0% 100%); font-size: 0.96em;}
+
+#frpspc section > div > span {transform: rotate(-1.7deg);}
+
+/* Règles partagées */ 
+#frpspc h3, #frpspc p, #frpspc section > div {background-color: #fff3;margin: 0 0 17px;}
+#frpspc h3, #frpspc section > div {font-family: 'Economica', sans-serif;text-align: right; padding:17px;}
+
+
+/* MARGE DROITE N-II */ 
+#frpspc aside {display: grid; grid-auto-columns: 1fr; align-items: center;border-left: #fff3 11px double;grid-gap:17px 0;}
+
+
+/* N·A-III Illustration  */
+#frpspc aside .dcrt {display: grid; grid-template:1fr/1fr;grid-template-areas:"dcrt";margin-top: 17px; align-self: flex-start}
+
+#frpspc aside .satimg img {grid-area: sat;width: 119px;height: 119px; place-self:center; object-fit: cover;clip-path: polygon(50% 100%, 100% 62%, 82% 5%, 18% 5%, 0 62%);}
+
+/* Bordure illustration */ 
+#frpspc aside .satimg {grid-area: dcrt; display: inline-grid; grid-template:1fr/1fr;grid-template-areas:"sat"; padding: 5px; background-color:#fff3 ; clip-path: polygon(50% 100%, 100% 62%, 82% 5%, 18% 5%, 0 62%); place-self:center;margin-top: 9px}
+
+/* Décor avec métèore */ 
+#frpspc aside .mteor {grid-area: dcrt;display: inline-grid; grid-template:1fr/1fr;grid-template-areas:"mteor";place-self:center;height: 153px; width: 153px;border-radius:100%;border: 1px dashed #fff3;animation:tornatum 11s infinite linear;box-shadow: inset 0px 0px 3.4px #fff2,0px 0px 3.4px #fff2;}
+
+#frpspc aside .mteor::before{content: '';grid-area: mteor; height:22px;width: 44px;;place-self:flex-start center; margin-top: -11px; border-radius: 100%;
+box-shadow: 0px 0px 8.5px #fff2;animation:scintillatum 2s infinite linear;filter:blur(3px);}
+
+#frpspc aside .mteor::after{content: '';grid-area: mteor; height:34px;width: 34px;background-image: url('https://image.flaticon.com/icons/svg/2909/2909590.svg');background-size: cover;  place-self:flex-start center;margin-top: -17px;transform:rotate(230deg);}
+
+
+
+/*N·A-III Nom du ou des partenaire */
+#frpspc aside .avc {background-color:#fff3;display:inline-flex;width: max-content; padding:11px 17px 11px 11px; font-family: 'Economica';font-size:1.19em ; font-weight: bold; color: #fffc; text-shadow: 0 0 11px black;margin:0 17px 0 0; clip-path: polygon(0% 0%,0% calc(100% - 11px), 100% 100%, calc(100% - 11px) 11px);}
+
+#frpspc aside .avc span::before {content: '& '}
+#frpspc aside > div > span {transform: rotate(3.4deg);}
+
+
+/* Fais péter la musique  */
+.radrp {text-decoration:none; background-color: #fff3;display:inline-flex;padding:11px; font-family: 'Economica';font-size:1.02em ;  color: #fffa; text-shadow: 0 0 11px black;margin:0 17px 0 0; clip-path: polygon(0 11px,0% 100%, calc(100% - 11px) calc(100% - 11px), 100% 0);    line-height: 34px;}
+#frpspc aside > .radrp > span {padding-left: 11px; transform: rotate(-3.4deg);}
+
+.radrp::before {content: '';height: 34px;width: 36px; margin-top:5px ; background-size: cover;background-image:url('https://raw.githubusercontent.com/m-ioao/Concours/master/oldrad.svg');}
+.radrp:hover {color: whitesmoke;}
+
+/* Le but initial était de faire une intégration avec la balise <audio> mais elle et moi, nous nous sommes un peu (beaucoup) fâché, alors pour éviter de fracasser mon ordinateur j'ai préféré renoncé et j'ai du coup laisser ce petit artéfact pour quand même permettre l'ajout de musique.*/
+
+/*N·A-III Illustration système kennysquad */
+#system {display: grid;grid-template-areas: "system";height: 170px; width: 170px; margin: auto;}
+
+/* Première couronne */
+#gamma {grid-template-areas: "gamma";width:136px; height: 136px; border: thin dashed lightgray;/*--*/animation:tornatum 17s infinite linear;/*--*/}
+
+#gamma::before {content:'';grid-template-areas: gamma; height: 22px; width: 22px; background-image: url('https://image.flaticon.com/icons/svg/2909/2909743.svg'); justify-self: center;margin: -11px;/*--*/animation:tornatum 11s infinite linear;/*--*/ }
+
+#stigma {grid-template-areas: gamma;display: inline-grid;grid-template-areas: "stigma"; height: 34px; width: 34px;  border: thin dashed lightgray;border-radius: 100%;place-self:center self-end;margin-right: -22px ; /*--*/ animation:tornatum 7s infinite linear;/*--*/}
+
+#stigma::before {content: '';grid-area: stigma;background-image: url('https://image.flaticon.com/icons/svg/2949/2949022.svg'); width: 17px;height: 17px; place-self: center;/*--*/animation:tornatum 7s infinite linear;/*--*/;}
+
+#stigma::after {content: '';grid-area: stigma; background-image: url('https://image.flaticon.com/icons/svg/2909/2909605.svg'); width: 11px;height: 11px; justify-self:center;margin-top: -5.5px; /*--*/animation:tornatum 5s infinite linear;/*--*/}
+
+#gamma::after {content:'';grid-template-areas: gamma; height: 22px; width: 22px; background-image: url('https://image.flaticon.com/icons/svg/2909/2909741.svg'); background-size: cover;align-self: center; margin-left: 5.5px; /*--*/animation:tornatum 5s infinite linear;/*--*/ }
+
+
+/* Deuxième couronne*/
+#beta {grid-template-areas: "beta";width: 85px;height: 85px;  border: thin dashed lightgray; /*--*/animation:tornatum 11s infinite linear;/*--*/}
+
+#beta::before {content: '';grid-area: beta;background-image: url('https://image.flaticon.com/icons/svg/2909/2909626.svg');  width: 17px;height: 17px;place-self: flex-end center; margin-bottom: -8.5px;/*--*/animation:tornatum 10s infinite linear;/*--*/}
+#beta::after {content: '';grid-area: beta; background-image:url('https://image.flaticon.com/icons/svg/2530/2530911.svg'); width: 17px;height: 17px;align-self:center;margin-left: -8.5px; /*--*/animation:tornatum 5s infinite linear;/*----*/}
+
+
+/* Troisième couronne*/
+#alpha {grid-template-areas: "alpha"; width: 51px;height: 51px;  border: thin dashed lightgray;/*--*/animation:tornatum 6s infinite linear;/*--*/}
+
+#alpha::before {content: '';grid-area: alpha;background-image: url('https://image.flaticon.com/icons/svg/2530/2530934.svg'); width: 11px;height: 11px;justify-self: center;margin-top: -5.5px;/*--*/animation:tornatum 2s infinite linear;/*--*/}
+
+/* Centre*/
+#omega {width: 34px; height: 34px; background-image: url('https://image.flaticon.com/icons/svg/2909/2909573.svg'); /*--*/animation:tornatum 5s infinite linear;/*--*/}
+
+
+/* Règles partagées*/ 
+#omega, #alpha, #beta, #gamma {grid-area:system; display: inline-grid;border-radius: 100%; place-self: center;}
+
+#alpha, #beta,#stigma, #gamma {box-shadow: inset 0px 0px 8.5px #fff2,0px 0px 8.5px #fff2;}
+
+#omega,#alpha::before,#beta::before,#beta::after,#stigma::before,#stigma::after,#gamma::before {background-size: cover;border-radius: 100%;box-shadow: 0px 0px 8.5px #000a}
+
+
+
+
+
+
+/* Animations */
+@keyframes tornatum {0%{transform:rotate(0deg);} 100%{transform:rotate(360deg);}
+/* Sortilège pour faire totu tourner, et surtout pour contrôler l'esprit de celui qui regarde :p*/}
+
+@keyframes scintillatum {;
+  0%,100% {background-color: hsl(0, 0%, 5%); }
+  50% {background-color: hsl(0, 0%, 25%); }
+}
